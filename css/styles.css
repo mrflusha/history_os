@@ -1,0 +1,133 @@
+/*ЧБ СТИЛИ*/
+
+*{
+	margin: 0;
+	padding: 0;
+
+
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+}
+
+body{
+	display: flex;
+	width: 100vw;
+	flex-direction: column;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Neue', system-ui, sans-serif;
+	background: #FFF;
+	color: #000 ;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+
+}
+
+#title{
+	display: flex;
+	background: #FFF;
+	color: #AAA;
+	justify-content: center;
+	align-items: center;
+	flex-flow: ;
+	font-size: 10vmin;
+	width: 65vw;
+	min-height: 20vh;
+	text-align: center;
+
+}
+
+/*MENU SECTION*/
+#menuWindow{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+#menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+
+.operatingSystemClass{
+	display: flex;
+	background: #000;
+	color: #FFF;
+	font-size: 6vmin;
+	width: 65vw;
+	height: 15vh;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3vh;
+	max-width: 90vw;
+}
+
+/*
+.operatingSystemClass:hover{
+	background: #FFF;
+	color: #000;
+	border: 1px solid #000;
+}
+*/
+
+
+.operating_system_kernel{
+	display: flex;
+	flex-direction: column;
+
+}
+.operatingSystemMenuSecondary{
+	display: none;
+	flex-direction: column;
+}
+
+.secondMenuButtons{
+	display: none;
+	width: 65vw;
+	height: 15vh;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	color: #FFF;
+	margin-top: 5vh;
+}
+
+#backbutton{
+	display: flex;
+	width: 65vw;
+	height: 15vh;
+	justify-content: center;
+	align-items: center;
+	background: green;
+	color: #FFF;
+	margin-top: 5vh;
+}
+
+
+
+.manual{
+	display: none;
+}
+
+.license{
+	display: none;
+}
+
+.operatingSystemBodyText{
+	display: none;
+}
+
