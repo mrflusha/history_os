@@ -13,7 +13,7 @@ mrflusha
 
 const operatingSystemMenuButtons = document.getElementsByClassName("operatingSystemClass")
 const operatingSystemMenuSecondary = document.getElementsByClassName("operatingSystemMenuSecondary")
-const osBasedSystem = ["unixBased", "linux_based", "dos_based"]
+const osBasedSystem = ["unixBased", "LinuxBased", "", "dos_based"]
 
 
 
@@ -23,7 +23,7 @@ const osBasedSystem = ["unixBased", "linux_based", "dos_based"]
 /*Работает похуй*/
 
 
-for(let i = 0; i <= 2; i++){
+for(let i = 0; i <= 3; i++){
 	operatingSystemMenuButtons[i].onclick = () => {
 		let secondMenuShowed = false;
 		animateButtons(i)
@@ -73,7 +73,7 @@ SecondaryMenuLogic = (numberOfButton) => {
 		systemChoose[i].style.display = "flex";
 	}
 
-	for(let i = 0; i <= 2; i++){
+	for(let i = 0; i <= 3; i++){
 		operatingSystemMenuButtons[i].style.display = 'none'
 	}
 
