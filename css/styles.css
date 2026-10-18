@@ -30,6 +30,18 @@ body{
 
 }
 
+a.disabled{
+	pointer-events: none;
+	cursor: default;
+	color: pink;
+	text-decoration: none;
+}
+
+span{
+	font-size: 4vmin;
+	background: #293B34;
+}
+
 #title{
 	display: flex;
 	background: #FFF;
@@ -132,5 +144,55 @@ body{
 }
 
 #linux_old{
+	display: none;
+}
+
+
+
+/*widow about*/
+
+#window_about{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#infoTitle{
+	display: flex;
+	font-size: 8vmin;
+}
+
+#infoText{
+	display: flex;
+	align-content: baseline;
+	background: grey;
+	color: #FFF;
+	width: 75vw;
+	border: 2px solid black;
+}
+
+#bodyText{
+	display: flex;
+	font-size: 3vmin;
+	flex-direction: column;
+}
+
+#backToMenuButton{
+	display: flex;
+	width: 65vw;
+	height: 15vh;
+	justify-content: center;
+	align-items: center;
+	background: green;
+	color: #FFF;
+	margin-top: 5vh;
+}
+
+#fedora{
+	display: none;
+}
+
+input{
 	display: none;
 }

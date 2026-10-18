@@ -15,7 +15,7 @@
 
 
 			<div id = "menu">
-				<div id="unix" class = "operating_system_kernel">
+				<div  class = "operating_system_kernel">
 					<div class = 'operatingSystemClass'>Unix Based ⏬️</div>
 					<div class = "operatingSystemMenuSecondary">				
 						<div id = "unix" class="title_of_operatingSystemWindow secondMenuButtons unixBased">UNIX</div>
@@ -24,13 +24,13 @@
 				</div>
 
 				<div id = "linux" class="operating_system_kernel">
-					<div class="operatingSystemClass">LINUX</div>
+					<div class="operatingSystemClass">LINUX ⏬️</div>
 					<div class = "operatingSystemMenuSecondary">
 						<div id = "Linux" class="title_of_operatingSystemWindow operatingSystemMenuSecondary secondMenuButtons LinuxBased">Общая справка</div>
 						<div id = "debian" class="title_of_operatingSystemWindow operatingSystemMenuSecondary secondMenuButtons LinuxBased">Debian</div>
 						<div id = "Arch" class="title_of_operatingSystemWindow operatingSystemMenuSecondary secondMenuButtons LinuxBased">Arch</div>
 						<div id = "fedora" class="title_of_operatingSystemWindow operatingSystemMenuSecondary secondMenuButtons LinuxBased">Fedora</div>
-						<div id = "arch" class="title_of_operatingSystemWindow operatingSystemMenuSecondary secondMenuButtons LinuxBased">Debian based Русские дистрибутивы</div>
+						<div id = "russianClosedSource" class="title_of_operatingSystemWindow operatingSystemMenuSecondary secondMenuButtons LinuxBased">Debian based Русские дистрибутивы</div>
 						<!--ADD LATER-->
 					</div>
 					<!--я не ебу почему не работает код-->
@@ -60,16 +60,21 @@
 					<div id = "susu_and_other"></div>
 				</div>
 				<div id = "dos" class = "operating_system_kernel">
-					<div class = "operatingSystemClass">DOS BASED</div>
+					<div class = "operatingSystemClass">DOS BASED ⏬️</div>
 						<div class = "dos_based operatingSystemMenuSecondary secondMenuButtons"> 
-							<div class = "title_of_operatingSystemWindow">DOS</div>
+							<div id = 'dosMenu' class = "title_of_operatingSystemWindow">DOS</div>
 						</div>
 
 
 
 				</div>			
 			</div> <!--не ебу не успею сегодня нихуя опять на пол года проект-->
-			<div id = "window_about">				
+			<div id = "window_about">
+				<div id = 'infoTitle'>Test title</div>
+				<div id = 'infoText'>
+					<div id = 'blockOfText'></div>
+				</div>
+				<div id = 'backToMenuButton' class = 'licenseType'>Вернуться в главное меню</div>
 			</div>
 
 		</div>
@@ -77,7 +82,7 @@
 	<div id = "footer copyright">mrflusha 2026</div>
 	<input type="color" name="">
 
-
+	<script src="arrays.js"></script>
 	<script src="script.js"></script>
 
 </body>

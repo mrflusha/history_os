@@ -16,6 +16,18 @@ const operatingSystemMenuSecondary = document.getElementsByClassName("operatingS
 const osBasedSystem = ["unixBased", "LinuxBased", "", "dos_based"]
 
 
+//похуй кнопки подключаем на прямую
+const unix = document.getElementById("unix");
+const linux = document.getElementById("Linux");//linix
+const dos = document.getElementById("dosMenu");
+const arch = document.getElementById("Arch");
+const debian = document.getElementById("debian");
+const russianClosedSource = document.getElementById("russianClosedSource");
+
+
+
+
+
 
 
 
@@ -30,6 +42,9 @@ for(let i = 0; i <= 3; i++){
 		SecondaryMenuLogic(i)
 	}
 }
+
+
+
 
 
 
@@ -77,6 +92,15 @@ SecondaryMenuLogic = (numberOfButton) => {
 		operatingSystemMenuButtons[i].style.display = 'none'
 	}
 
+
+	//убираем неактивные пока элементы
+	document.getElementById("fedora").style.display = "none";
+	document.getElementById("russianClosedSource").style.display = "none";
+
+
+
+
+
 	//backbuttonlogic
 	systemChoose[systemChoose.length - 1].insertAdjacentHTML("afterend", `<div id = "backbutton">Назад</div>`)
 	backButtonClick();
@@ -102,3 +126,57 @@ displayButtons = (menuFirstButtons, menuSecondButtons) => {
 	}
 	document.getElementById("backbutton").remove()
 }
+
+displayContext = () => {
+	bsd.onclick = () => {
+		document.getElementById("menu").style.display = "none";
+		document.getElementById("window_about").style.display = "flex";
+		document.getElementById("infoTitle").innerText = "BSD"
+		document.getElementById("blockOfText").insertAdjacentHTML("afterend", `<div id = "bodyText">${osHistoryLinks[3]}</div>`)
+
+	}
+	unix.onclick = () => {
+		document.getElementById("menu").style.display = "none";
+		document.getElementById("window_about").style.display = "flex";
+		document.getElementById("infoTitle").innerText = "UNIX"
+		document.getElementById("blockOfText").insertAdjacentHTML("afterend", `<div id = "bodyText">${osHistoryLinks[0]}</div>`)
+
+	}	
+	linux.onclick = () => {
+		document.getElementById("menu").style.display = "none";
+		document.getElementById("window_about").style.display = "flex";
+		document.getElementById("infoTitle").innerText = "Linux"
+		document.getElementById("blockOfText").insertAdjacentHTML("afterend", `<div id = "bodyText">${osHistoryLinks[1]}</div>`)
+
+	}	
+	debian.onclick = () => {
+		document.getElementById("menu").style.display = "none";
+		document.getElementById("window_about").style.display = "flex";
+		document.getElementById("infoTitle").innerText = "debian"
+		document.getElementById("blockOfText").insertAdjacentHTML("afterend", `<div id = "bodyText">${osHistoryLinks[4]}</div>`)
+
+	}	
+	arch.onclick = () => {
+		document.getElementById("menu").style.display = "none";
+		document.getElementById("window_about").style.display = "flex";
+		document.getElementById("infoTitle").innerText = "Arch"
+		document.getElementById("blockOfText").insertAdjacentHTML("afterend", `<div id = "bodyText">${osHistoryLinks[5]}</div>`)
+
+	}	
+	dos.onclick = () => {
+		document.getElementById("menu").style.display = "none";
+		document.getElementById("window_about").style.display = "flex";
+		document.getElementById("infoTitle").innerText = "dos"
+		document.getElementById("blockOfText").insertAdjacentHTML("afterend", `<div id = "bodyText">${osHistoryLinks[2]}</div>`)
+
+	}
+
+	document.getElementById("backToMenuButton").onclick = () => {
+		document.getElementById("menu").style.display = "flex";
+		document.getElementById("window_about").style.display = "none";
+		document.getElementById("bodyText").remove()	
+	}
+}
+
+
+displayContext()
